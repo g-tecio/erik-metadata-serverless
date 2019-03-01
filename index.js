@@ -26,7 +26,26 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-// Get User endpoint
+
+// Get all Metadata, thanks Alan :v
+app.get('/metadata', function (req, res) {
+    const params = {
+      TableName: USERS_TABLE,
+    }
+  
+    dynamoDb.scan(params, (err, result) => {
+      if (err) {
+          res.send({
+            success: false,
+            message: 'Error: Server error'
+          });
+        } else {
+          res.send(result.Items);
+        }
+      });
+  })
+
+// Get Metadata endpoint
 app.get('/metadata/:id', function (req, res) {
   const params = {
     TableName: USERS_TABLE,
@@ -49,7 +68,7 @@ app.get('/metadata/:id', function (req, res) {
   });
 })
 
-// Create User endpoint
+// Create Metadata endpoint
 app.post('/metadata', function (req, res) {
   const { id, name, owner_id, created_at, schema } = req.body;
   if (typeof id !== 'string') {
@@ -65,7 +84,13 @@ app.post('/metadata', function (req, res) {
       name: name,
       owner_id: owner_id,
       created_at: created_at,
-      schema: schema
+      schema: {
+        label: "string",
+        machine_name: "string",
+        type: "string",
+        required: "string",
+        max_lenght: "string"
+      }
     },
   };
 

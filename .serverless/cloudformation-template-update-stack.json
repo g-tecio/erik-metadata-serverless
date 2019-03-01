@@ -135,7 +135,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-express-metadata/dev/1551380203629-2019-02-28T18:56:43.629Z/my-express-metadata.zip"
+          "S3Key": "serverless/my-express-metadata/dev/1551473273896-2019-03-01T20:47:53.896Z/my-express-metadata.zip"
         },
         "FunctionName": "my-express-metadata-dev-app",
         "Handler": "index.handler",
@@ -159,14 +159,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "AppLambdaVersionVVboNe6qClG3xfnZ15vgt1TZ4smOJDdShPPTupEQUVU": {
+    "AppLambdaVersion7ybdcqICnjhMdtp4K36ZabFHUEZXmfGngJ9JJ2H8wI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "hJLiYWlx2YjKTOMcmi5N5/E11MpDyvOl24QtLeD4P1o="
+        "CodeSha256": "PRrWDnLq0nG9v+HH0DUuqTVObHlOaXYal9vc+Uz1OzM="
       }
     },
     "GetUserLambdaFunction": {
@@ -176,7 +176,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-express-metadata/dev/1551380203629-2019-02-28T18:56:43.629Z/my-express-metadata.zip"
+          "S3Key": "serverless/my-express-metadata/dev/1551473273896-2019-03-01T20:47:53.896Z/my-express-metadata.zip"
         },
         "FunctionName": "my-express-metadata-dev-getUser",
         "Handler": "index.handler",
@@ -200,14 +200,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "GetUserLambdaVersionCv62AUBaU5lBQG7hZPnUgIWKKuvgLJtOYlsicIU9IK8": {
+    "GetUserLambdaVersionf5yUVxwAiy2DAP5PP8H5ylh3rTjKl43s7eff1Gxtk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetUserLambdaFunction"
         },
-        "CodeSha256": "hJLiYWlx2YjKTOMcmi5N5/E11MpDyvOl24QtLeD4P1o="
+        "CodeSha256": "PRrWDnLq0nG9v+HH0DUuqTVObHlOaXYal9vc+Uz1OzM="
       }
     },
     "CreateUserLambdaFunction": {
@@ -217,7 +217,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-express-metadata/dev/1551380203629-2019-02-28T18:56:43.629Z/my-express-metadata.zip"
+          "S3Key": "serverless/my-express-metadata/dev/1551473273896-2019-03-01T20:47:53.896Z/my-express-metadata.zip"
         },
         "FunctionName": "my-express-metadata-dev-createUser",
         "Handler": "index.handler",
@@ -241,14 +241,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "CreateUserLambdaVersionwhS1Pw2iLePJKHgVnqaXVbM0YUY76Zm8G6SjGH8og": {
+    "CreateUserLambdaVersionGRI7tXAv7Gg6nI9X9aqq7mdg0XJYHR2SqY5lgP3Tp4E": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateUserLambdaFunction"
         },
-        "CodeSha256": "hJLiYWlx2YjKTOMcmi5N5/E11MpDyvOl24QtLeD4P1o="
+        "CodeSha256": "PRrWDnLq0nG9v+HH0DUuqTVObHlOaXYal9vc+Uz1OzM="
       }
     },
     "ApiGatewayRestApi": {
@@ -479,7 +479,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1551380205436": {
+    "ApiGatewayDeployment1551473275566": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -667,19 +667,19 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionVVboNe6qClG3xfnZ15vgt1TZ4smOJDdShPPTupEQUVU"
+        "Ref": "AppLambdaVersion7ybdcqICnjhMdtp4K36ZabFHUEZXmfGngJ9JJ2H8wI"
       }
     },
     "GetUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetUserLambdaVersionCv62AUBaU5lBQG7hZPnUgIWKKuvgLJtOYlsicIU9IK8"
+        "Ref": "GetUserLambdaVersionf5yUVxwAiy2DAP5PP8H5ylh3rTjKl43s7eff1Gxtk"
       }
     },
     "CreateUserLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateUserLambdaVersionwhS1Pw2iLePJKHgVnqaXVbM0YUY76Zm8G6SjGH8og"
+        "Ref": "CreateUserLambdaVersionGRI7tXAv7Gg6nI9X9aqq7mdg0XJYHR2SqY5lgP3Tp4E"
       }
     },
     "ServiceEndpoint": {
